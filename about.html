@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>But It Began</title>
+</head>
+
+<style type="text/css">
+
+/*Custom fonts from dafont.com*/
+@font-face {
+	font-family: "drip";
+    src: url("drip.ttf")
+}
+@font-face {
+	font-family: "blocky";
+    src: url("blocky.otf")
+}
+@font-face {
+	font-family: "heads";
+    src: url("heads.ttf")
+}
+@font-face {
+	font-family: "tobe";
+    src: url("tobe.ttf")
+}
+
+/*I used the same header and nv bar on both my pages excluding the landing page*/
+#top{
+background-image: url(kh.jpg);
+font-size: 404px;
+background-color: black;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+animation-name: move;
+    animation-duration: 2s;
+     -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
+       -o-animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+z-index: 1;
+}
+
+ul, li, a {
+	
+  padding: 0px 44px 0px 44px;
+   text-align: center;
+background-color: #CEC8B0;
+text-decoration: none;
+font-family: drip;
+text-shadow: 3px 2px #70424C;
+font-weight: bolder;
+font-size: 44px;
+color: black;
+margin-top: 0%;
+ letter-spacing: 2px; 
+ opacity: .9;
+}
+
+li {
+ display: inline-flex;
+
+}
+
+a:hover {
+	font-size: 66px;
+	transition-timing-function: ease-in-out;
+	transition: 1s;
+}
+	body {
+		width: 100%;
+		background-color: #EEEAE9;
+		overflow: scroll;
+		height: 100%;
+		margin-bottom: 100%;
+	}
+
+#bg{
+background-image: url("background.gif");
+background-repeat: no-repeat;
+background-position: center;
+ position:fixed;
+width: 100%;
+bottom: -42%;
+height: 100%;
+z-index: -1;
+}
+
+@keyframes move {
+    0% {
+        transform: translate3d(1px, 1px, 1px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(4px, 4px, 4px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(1px, 1px, 1px);
+        animation-timing-function: ease-in-out;
+    }
+
+
+/*#style:hover {
+	font-family: heads; font-weight:bolder;letter-spacing: 4px;color: white; text-shadow: 2px 3px #A00224; font-size: 66px; text-align: center; margin-top: -7%;margin-bottom: 14%;"> <h1>The World Ends With You</h1><hr style="	border-top: 14px solid #E2205E; margin-top: -17%;"><hr style="border-top: 14px solid #CEC8B0; margin-top: -6%;"><hr style="border-top: 14px solid #CEC8B0; margin-top: 4%;*/
+
+}
+
+
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+background-image: url("ready.jpg");
+background-size: cover;
+background-position: center;
+  margin: 10px auto;
+  background: #EEEAE9;
+  border-radius: 2px;
+  width: auto;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  transition: all 200ms;
+  font-size: 20px;
+  font-weight: bold;
+  color: #70424C;
+}
+
+.popup .content {
+	background-image: url("ready.jpg");
+	background-size: cover;
+	background-position: center;
+  overflow: auto;
+}
+
+	</style>
+	
+</head>
+<body>
+
+<div style="margin-bottom: 8%; padding-top:10%; opacity: 0.8; border: 4px solid black; background-color: #CEC8B0; font-size: 40px;letter-spacing: 4px;text-shadow: 1px 2px #A00224; position: absolute; bottom: -274%; text-align: center;">
+	すばらしきこのせかい <span style="font-family: tobe">Subarashiki Kono Sekai, lit.  "It's a Wonderful World".
+	<br>
+	 The Wolrd Ends With You begins as Neku Sakuraba, waking up in Tokyo only to find out that he is a participant of a deadly game.  Neku Sakuraba and his allies are forced to participate in the game that will determine their fate - life or death.
+	  <br>
+			<br>
+			<br>
+			<br>
+			Japan - July 27th, 2007<br>
+			North America - April 22nd, 2008
+			  <br>
+			<br>
+			<br>
+			<br>
+			Square Enix
+			  <br>
+			<br>
+			<br>
+			<br>
+			T for Teens<br>
+<br>
+<div class="box">
+<a < class="button" href="#popupone" style=" border: 5% black;
+      border-radius: 7px; font-size: 34px; font-family: drip;background-color:#A00224 ">Are You Ready?</a>
+
+
+	<span>
+
+</div>
+
+<div id="popupone" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Neku Sakuraba, an unsociable 15-year-old boy, unexpectedly wakes up in the Shibuya shopping district of Tokyo, Japan. While trying to piece together his rude awakening, he receives a strange text message warning him that he will cease to exist unless he accomplishes a certain mission. Although he barely has time to grasp what is happening to him, he commences his assigned task in the mysterious streets of Shibuya. 
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+
+<div id="top">
+	.
+</div>
+
+	<ul>
+<li><b><a href="index.html">&#8668;Landing</a></b></li>
+<li><b><a href="about.html">&#8668;About&#8669;</a></b></li>
+<li><b><a href="slides.html">Characters&#8669;</a></b></li>
+    </ul>
+<div id="bg">
+	
+</div>
+
+<div id="style" style="font-family: heads; font-weight:bolder;letter-spacing: 4px;color: black; text-shadow: 2px 3px #A00224; font-size: 66px; text-align: center; margin-top: -6%;margin-bottom: 34%;"> <h1>The World Ends With You</h1><hr style="	border-top: 14px solid #E2205E; margin-top: -17%;"><hr style="border-top: 14px solid #38353C; margin-top: -6%;"><hr style="border-top: 14px solid #38353C; margin-top: 4%;"> </div>
+
+<div id="about">
+<span style=" text-decoration: underline; font-family: blocky; font-size: 94px; letter-spacing: 6px;text-shadow: 3px 4px #70424C;
+font-weight: bolder;transform:rotate(-14deg);position: absolute;
+	width: auto; left: 4%; bottom: -30%;">SYNOPSIS</span>
+</div>
+
+<div></div>
+
+<div >
+<span style=" text-decoration: underline; font-family: blocky; font-size: 94px; letter-spacing: 6px;text-shadow: 3px 4px #70424C;
+font-weight: bolder;transform:rotate(-14deg);position: absolute;
+	width: auto; left: 4%; bottom: -130%;">Release Date</span>
+</div>
+
+<div >
+<span style=" text-decoration: underline; font-family: blocky; font-size: 94px; letter-spacing: 6px;text-shadow: 3px 4px #70424C;
+font-weight: bolder;transform:rotate(-14deg);position: absolute;
+	width: auto; left: 4%; bottom: -180%;">Publisher</span>
+</div>
+
+<div >
+<span style=" text-decoration: underline; font-family: blocky; font-size: 94px; letter-spacing: 6px;text-shadow: 3px 4px #70424C;
+font-weight: bolder;transform:rotate(-14deg);position: absolute;
+	width: auto; left: 4%; bottom: -220%;">Rating</span>
+</div>
+
+<div style="bottom: -340%; position: absolute; left: 30%;">
+  <iframe style="border: 8px solid black" width="560" height="315" src="https://www.youtube.com/embed/WjiaMBUQdqc" frameborder="0" allowfullscreen></iframe>
+</video> 
+
+</div>
+
+</body>
+
+<!--HTML audio sourced so that automatically plays when the about page loads-->
+<audio src="Ending.mp3" type="audio/mpeg" autoplay></audio>
+
+<footer>
+<table style="position: absolute; bottom:-420%; margin-bottom: -6%; transform: scaleX(2.5);left: 28%; transform: scale(2.6,1.5);">
+  <tr>
+    <th><a href="https://www.amazon.com/World-Ends-You-Nintendo-DS/dp/B00136MBHA"><img src="fool.gif"></a></th>
+  </tr>
+</table> </footer>
+</html>

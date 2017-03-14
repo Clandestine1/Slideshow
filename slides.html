@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>With Us</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<!--Inline styling used in this page because the other options were giving me trouble and no results-->
+<body style="width: 100%;
+		background-color: #EEEAE9;">
+
+<div id="top">
+	.
+</div>
+
+	<ul>
+<li><b><a href="index.html">&#8668;Landing</a></b></li>
+<li><b><a href="slides.html">&#8668;Characters&#8669;</a></b></li>
+<li><b><a href="about.html">About&#8669;</a></b></li>
+    </ul>
+<div id="bg">
+	
+</div>
+
+<div id="style" style="font-family: heads; font-weight:bolder;letter-spacing: 4px;color: black; text-shadow: 2px 3px #A00224; font-size: 78px; text-align: center; margin-top: -7%;margin-bottom: 23%;"> <h2>The World Ends With You</h2><hr style="	border-top: 14px solid #E2205E; margin-top: -17%;"><hr style="border-top: 14px solid #38353C; margin-top: -6%;"><hr style="border-top: 14px solid #38353C; margin-top: 3%;"> </div>
+<!--I used a wrapper div so that all the elements could be styled together and I also used inline styling so I could style certain elements sepearatly-->
+<div id="wrapper" style="position: absolute;
+			display: inline-flex; margin-bottom: 8%; padding-top:10%; opacity: 0.8; border: 4px solid black; background-color: #CEC8B0; font-size: 40px; text-shadow: 1px 2px #A00224; position: absolute; bottom: -514%; text-align: center; width: 98%; padding: 6%;">
+<b class="back" onclick="plusDivs(-1)"><img src="back.png" height="280" width="280"></b>
+<br>
+<div><img class="slideshow" src="neku.gif"></div>
+<div><img class="slideshow" src="shiki.gif"></div>
+<div><img class="slideshow" src="b.gif"></div>
+<div><img class="slideshow" src="joshua.gif"></div>
+<div><img class="slideshow" src="r.gif"></div>
+<br>
+<b class="forward" onclick="plusDivs(+1)"><img src="next.png" height="280" width="280"></b>
+</div>
+
+<script type="text/javascript">
+	
+var slideY = 1;
+showDivs(slideY);
+
+function plusDivs(la) {
+	showDivs(slideY += la);
+}
+
+function showDivs(la){
+	var money;
+	var duh = document.getElementsByClassName("slideshow");
+	if (la > duh.length) {slideY = 1}
+		if (la < 1) {slideY = duh.length}
+			for (money = 0; money < duh.length; money++) {
+				duh[money].style.display = "none";
+			}
+			duh[slideY-1].style.display = "block";
+	}
+
+</script>
+
+<div style="padding-bottom: 1%; position: absolute; font-family: drip;
+			display: inline-flex; margin-bottom: 8%; padding-top:10%; opacity: 0.8; border: 4px solid black; background-color: #CEC8B0; font-size: 40px; text-shadow: 1px 2px #A00224; position: absolute; bottom: -90%; text-align: center; width: 98%;">
+			<span style="font-family: blocky; font-weight:bolder;letter-spacing: 4px;color: black; text-shadow: 4px 4px #6112C0; font-size: 74px; text-align: center; letter-spacing: 4px; position: absolute; top: -1%; transform: rotate(-14deg); left: 1%; ">Neku</span> At fifteen, Neku is an ardent fan of graffiti, but far less enthusiastic about forging relationships with other people. When the Reapers' Game throws him into contact with other Players, he has two choices: open up... or get picked off.
+			<br>
+			<img style="position: relative;" src="neks.gif">
+						
+			
+<div style="padding-bottom: -10%; position: absolute; font-family: drip;
+			display: inline-flex; margin-bottom: 8%; padding-top:10%; opacity: 1; border: 4px solid black; background-color: #CEC8B0; font-size: 40px; text-shadow: 1px 2px #A00224; position: absolute; bottom: -160%; text-align: center; width: 99%;">
+			<span style="font-family: blocky; font-weight:bolder;letter-spacing: 4px;color: black; text-shadow: 4px 4px #6112C0; font-size: 74px; text-align: center; letter-spacing: 4px; position: absolute; top: -1%; transform: rotate(-14deg); left: 1%; ">Shiki</span> Fashionable and fabulous at fifteen, Shiki knows clothes. While she puts on a cheerful face to lend Neku some much-needed moral support, deep down she harbors a secret... She never parts with her homemade stuffed animal, Mr. Mew; to survive, Neku can never part with her.
+			<br>
+			<img style="position: relative;" src="siks.gif"></div>
+
+<div style="padding-bottom: -10%; position: absolute; font-family: drip;
+			display: inline-flex; margin-bottom: 8%; padding-top:10%; opacity: 1; border: 4px solid black; background-color: #CEC8B0; font-size: 40px; text-shadow: 1px 2px #A00224; position: absolute; bottom: -300%; text-align: center; width: 99%;">
+			<span style="font-family: blocky; font-weight:bolder;letter-spacing: 4px;color: black; text-shadow: 4px 4px #6112C0; font-size: 74px; text-align: center; letter-spacing: 4px; position: absolute; top: -1%; transform: rotate(-14deg); left: 1%; ">Beat</span> Hot-blooded and hard-headed, Beat is the polar opposite of Neku—even if they are the same age. Still, despite his emotional outbursts, he has a big heart. He's always ready to throw down and ollie into combat on his board, with Rhyme right there beside him.
+			<br>
+			<img style="position: relative;" src="beats.gif"></div>
+
+<div style="padding-bottom: -10%; position: absolute; font-family: drip;
+			display: inline-flex; margin-bottom: 8%; padding-top:10%; opacity: 1; border: 4px solid black; background-color: #CEC8B0; font-size: 40px; text-shadow: 1px 2px #A00224; position: absolute; bottom: -450%; text-align: center; width: 99%;">
+			<span style="font-family: blocky; font-weight:bolder;letter-spacing: 4px;color: black; text-shadow: 4px 4px #6112C0; font-size: 74px; text-align: center; letter-spacing: 4px; position: absolute; top: -1%; transform: rotate(-14deg); left: 1%; ">Joshua</span> It's quickly evident Joshua is clever beyond his fifteen years—as sly as they come. Unfortunately, his insufferably snotty attitude only serves to widen the gulf between him and Neku...but his knowledge, especially about the Game, does earn him some points.
+			<br>
+			<img style="position: relative;" src="joks.gif"></div>		
+	
+<div style="padding-bottom: -10%; position: absolute; font-family: drip;
+			display: inline-flex; margin-bottom: 8%; padding-top:10%; opacity: 1; border: 4px solid black; background-color: #CEC8B0; font-size: 40px; text-shadow: 1px 2px #A00224; position: absolute; bottom: -590%; text-align: center; width: 99%;">
+			<span style="font-family: blocky; font-weight:bolder;letter-spacing: 4px;color: black; text-shadow: 4px 4px #6112C0; font-size: 74px; text-align: center; letter-spacing: 4px; position: absolute; top: -1%; transform: rotate(-14deg); left: 1%; ">Rhyme</span> Rhyme's earnest and hard-working attitude proves a big help to Neku and Shiki early on, as well as to her partner, Beat. She has an addiction to adages and no shortage of smiles, and without her, the others would be lost.
+			<br>
+			<img style="position: relative;" src="rys.gif"></div>	
+
+</div>
+
+</body>
+
+<footer>
+	<img style="bottom: -600%; position: absolute; width: 1266px;" src="bot.gif">
+</footer>
+
+<audio src="Twister.mp3" type="audio/mpeg" autoplay></audio>
+
+</html>

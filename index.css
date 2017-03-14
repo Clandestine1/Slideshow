@@ -1,0 +1,109 @@
+/*I had trouble with my external and internal style sheet working so most of my styling was done inline*/
+
+
+/*Custom fonts*/
+@font-face {
+	font-family: "drip";
+    src: url("drip.ttf")
+}
+@font-face {
+	font-family: "blocky";
+    src: url("blocky.otf")
+}
+@font-face {
+	font-family: "heads";
+    src: url("heads.ttf")
+}
+@font-face {
+	font-family: "tobe";
+    src: url("tobe.ttf")
+}
+
+/*Using keyframe from my last assignment I make my header move subtly */
+#top{
+background-image: url(kh.jpg);
+font-size: 404px;
+background-color: black;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+animation-name: move;
+    animation-duration: 2s;
+     -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
+       -o-animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+z-index: 1;
+}
+
+/*Nav bar, styling makes it horizontal and changes the color*/
+ul, li, a {
+	
+  padding: 0px 44px 0px 44px;
+   text-align: center;
+background-color: #CEC8B0;
+text-decoration: none;
+font-family: drip;
+text-shadow: 3px 2px #70424C;
+font-weight: bolder;
+font-size: 44px;
+color: black;
+margin-top: 0%;
+ letter-spacing: 2px; 
+ opacity: .9;
+}
+
+li {
+ display: inline-flex;
+
+}
+/* Wraps all the elements in 1 div 
+#wrapper {
+background-color: black;
+
+}*/
+
+/*Makes nav bar font get bigger on hover*/
+a:hover {
+	font-size: 66px;
+	transition-timing-function: ease-in-out;
+	transition: 1s;
+}
+
+#bg{
+background-image: url("background.gif");
+background-repeat: no-repeat;
+background-position: center;
+ position:fixed;
+width: 100%;
+bottom: -42%;
+height: 100%;
+z-index: -1;
+}
+
+@keyframes move {
+    0% {
+        transform: translate3d(1px, 1px, 1px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(4px, 4px, 4px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(1px, 1px, 1px);
+        animation-timing-function: ease-in-out;
+    }
+
+  
+/*Makes all pics in slide same width and height and display horizontally*/
+.slideshow{
+		height: 350px; 
+		width: 550px;
+		}
+
+		#wrapper{
+position: absolute;
+			display: inline-flex;		}
